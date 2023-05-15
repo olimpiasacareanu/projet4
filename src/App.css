@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.active{
+  color: aquamarine !important;
+}
+
+body{
+  background-color: rgb(250, 251, 251);
+}
