@@ -39,9 +39,25 @@
 
 
 .active{
-  color: aquamarine !important;
+  color: #BFA219 !important;
 }
 
 body{
   background-color: rgb(250, 251, 251);
 }
+
+/* .spring-green{
+  color: aquamarine !important;
+}
+
+.bg-spring-green{
+  background-color: rgb(72, 111, 98) !important;
+} */
+
+
+lottie-player{
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+

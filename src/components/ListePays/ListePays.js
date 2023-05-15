@@ -76,27 +76,29 @@ class ListePays extends Component{
                     <Pays 
                         {...pays} {...this.props}
                     >
-                    <NavLink to={`/pays/${this.state.nom}`} className="nav-link">Voir la fiche de pays</NavLink>
+                    <NavLink to={`/pays/${this.state.nom}`} className="nav-link">Voir la fiche du pays</NavLink>
                 </Pays>
                 </div>
             )
         })
 
         return (
-            <div className='container'>
+            <>
                 <Title>Liste des pays du monde</Title>
-                <Bouton estSelect={this.state.bntSelect==="all"} clic = {()=>this.handleFiltreRegion("all")}>Tous</Bouton>
-                <Bouton estSelect={this.state.bntSelect==="europe"} clic = {()=>this.handleFiltreRegion("europe")}>Europe</Bouton>
-                <Bouton estSelect={this.state.bntSelect==="americas"} clic = {()=>this.handleFiltreRegion("americas")}>Amerique</Bouton>
-                <Bouton estSelect={this.state.bntSelect==="africa"} clic = {()=>this.handleFiltreRegion("africa")}>Afrique</Bouton>
-                <Bouton estSelect={this.state.bntSelect==="oceania"} clic = {()=>this.handleFiltreRegion("oceania")}>Oceanie</Bouton>
-                <Bouton estSelect={this.state.bntSelect==="asia"} clic = {()=>this.handleFiltreRegion("asia")}>Asie</Bouton>
-                <p>Numero de pays : {this.state.listePays.length}</p>
-                <div className='row'>
-                    {listePays}
-                </div>                  
-                {pages}
-            </div>
+                <div className='container'>
+                    <Bouton estSelect={this.state.bntSelect==="all"} clic = {()=>this.handleFiltreRegion("all")}>Tous</Bouton>
+                    <Bouton estSelect={this.state.bntSelect==="europe"} clic = {()=>this.handleFiltreRegion("europe")}>Europe</Bouton>
+                    <Bouton estSelect={this.state.bntSelect==="americas"} clic = {()=>this.handleFiltreRegion("americas")}>Amerique</Bouton>
+                    <Bouton estSelect={this.state.bntSelect==="africa"} clic = {()=>this.handleFiltreRegion("africa")}>Afrique</Bouton>
+                    <Bouton estSelect={this.state.bntSelect==="oceania"} clic = {()=>this.handleFiltreRegion("oceania")}>Oceanie</Bouton>
+                    <Bouton estSelect={this.state.bntSelect==="asia"} clic = {()=>this.handleFiltreRegion("asia")}>Asie</Bouton>
+                    <p className='active'>Numero de pays : {this.state.listePays.length}</p>
+                    <div className='row'>
+                        {listePays}
+                    </div>                  
+                    {pages}
+                </div>
+            </>
         )
     }
 }

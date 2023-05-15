@@ -6,7 +6,7 @@ const pays = (props) => {
     let content =""
     if(!props.solo){
         content = (
-            <NavLink to={`/pays/${props.nom}`} className="nav-link text-success">Voir la fiche de pays</NavLink>
+            <NavLink to={`/pays/${props.nom}`} className="nav-link active">Voir la fiche du pays</NavLink>
         )
     }else{
         content = (
