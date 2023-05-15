@@ -12,6 +12,7 @@ import Erreur from "./components/Erreur/Erreur";
 import Erreur404 from "./components/Erreur/Erreur404/Erreur404";
 import "./App.css"
 import Accueil from "./components/Accueil/Accueil";
+import Footer from "./components/Footer/Footer"
 
 export default App;
 
@@ -19,7 +20,6 @@ function App() {
   return (
     <>
       <BrowserRouter >
-      
         <Routes>
           <Route element={<NavBar />}>
             <Route path="/" element={<Accueil />} />
@@ -30,7 +30,9 @@ function App() {
             <Route path="*" element={<Erreur><Erreur404 /></Erreur>}/>
             <Route path="/pays/*" element={<h1>Erreur 404</h1>}/>
           </Route>
+            {/* <Route element={<Footer />} /> */}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
