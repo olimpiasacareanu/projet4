@@ -95,8 +95,8 @@ class ListePays extends Component{
                     <p className='active'>Numero de pays : {this.state.listePays.length}</p>
                     <div className='row'>
                         {listePays}
-                    </div>                  
-                    {pages}
+                    </div>  
+                    {pages}               
                 </div>
             </>
         )
