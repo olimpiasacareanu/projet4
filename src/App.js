@@ -10,7 +10,6 @@ import NavBar2 from "./components/NavBar/NavBar2";
 import PaysParams from "./components/PaysDetails/PaysParams"
 import Erreur from "./components/Erreur/Erreur";
 import Erreur404 from "./components/Erreur/Erreur404/Erreur404";
-import "./App.css"
 import Accueil from "./components/Accueil/Accueil";
 import Footer from "./components/Footer/Footer"
 
@@ -30,7 +29,6 @@ function App() {
             <Route path="*" element={<Erreur><Erreur404 /></Erreur>}/>
             <Route path="/pays/*" element={<h1>Erreur 404</h1>}/>
           </Route>
-            {/* <Route element={<Footer />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -77,7 +77,7 @@ class ListePays extends Component{
                         {...pays} {...this.props}
                     >
                     <NavLink to={`/pays/${this.state.nom}`} className="nav-link">Voir la fiche du pays</NavLink>
-                </Pays>
+                    </Pays>
                 </div>
             )
         })

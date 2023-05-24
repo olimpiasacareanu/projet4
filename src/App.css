@@ -68,3 +68,15 @@ lottie-player{
   background-color: #BFA219 !important;
 }
 
+/* Le footer en bas de la page */
+#root{
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;  }          /* Hauteur du pied-de-page */
+
